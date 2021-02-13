@@ -22,7 +22,33 @@ header {
   background-color: var(--white);
 }
 
+h1,
+h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 0;
+  padding-bottom: 0;
+  outline: 2px solid tomato;
+}
+
+.main-nav,
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
 .webstudio {
+  display: block;
+  margin-top: 25px;
+  margin-bottom: 25px;
   text-decoration: none;
 }
 
@@ -47,6 +73,10 @@ header {
 /* Ссылки навигации */
 
 .link-nav .link {
+  display: block;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
   text-decoration: none;
   font-weight: 500;
   font-size: 14px;
@@ -62,6 +92,22 @@ header {
 
 .link-nav .current {
   color: var(--blue);
+}
+
+.link-nav {
+  display: flex;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 95px;
+  padding-left: 0;
+}
+
+.link-nav .item {
+  margin-right: 50px;
+}
+
+.link-nav .item:last-child {
+  margin-right: 0;
 }
 
 /* Ссылки контактов */
@@ -80,37 +126,63 @@ header {
   color: var(--blue);
 }
 
+.contacts-link {
+  display: flex;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  padding-left: 0;
+}
+
+.contacts-link .item + .item {
+  margin-left: 50px;
+}
+
 /* Герой */
 
 .hero {
   background-color: var(--dark-grey);
+  text-align: center;
 }
 
 .hero-title {
+  margin-bottom: 30px;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.4;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--white-text);
 }
 
 .hero-button {
+  border-radius: 4px;
+  padding: 10px 32px;
+
   background-color: var(--blue);
   font-weight: bold;
   font-size: 16px;
   line-height: 2;
-  display: flex;
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
   color: var(--white-text);
 }
 
 /* Преимущества */
 
+.advantages {
+  display: flex;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  justify-content: center;
+}
+
 .advantages .adv-title {
+  margin-top: 0;
+  padding-top: 95px;
+  margin-bottom: 10px;
+
   font-weight: bold;
   font-size: 14px;
   line-height: 1.2;
@@ -120,6 +192,10 @@ header {
 }
 
 .advantages .text {
+  padding-bottom: 95px;
+  margin-top: 0;
+  margin-bottom: 0;
+
   font-weight: normal;
   font-size: 14px;
   line-height: 1.7;
@@ -127,9 +203,20 @@ header {
   color: var(--grey-text);
 }
 
+.advantages li {
+  width: 270px;
+  margin-right: 30px;
+}
+
+.advantages li:last-child {
+  margin-right: 0;
+}
+
 /* Чем мы занимаемся */
 
 .works-title {
+  margin-bottom: 50px;
+
   font-weight: bold;
   font-size: 36px;
   line-height: 1.2;
@@ -138,12 +225,48 @@ header {
   color: var(--black-text);
 }
 
+.works .title {
+  display: flex;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-bottom: 95px;
+  padding-left: 0;
+}
+
+.title .picture {
+  margin-right: 30px;
+  padding-left: 0;
+}
+
+.title .picture:last-child {
+  margin-right: 0;
+}
+
 /* Наша команда */
 .our-team {
   background-color: var(--light-grey);
 }
 
+.team .team-list {
+  display: flex;
+  padding-left: 0;
+  padding-bottom: 95px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.team-list .people {
+  margin-right: 30px;
+}
+
+.team-list .people:last-child {
+  margin-right: 30px;
+}
+
 .team-title {
+  padding-top: 95px;
+  margin-bottom: 50px;
+
   font-weight: bold;
   font-size: 36px;
   line-height: 1.2;
@@ -153,17 +276,20 @@ header {
 }
 
 .team-list .list-item {
+  margin-top: 30px;
+  margin-bottom: 10px;
+
   font-weight: 500;
+  text-align: center;
   font-size: 16px;
   line-height: 1.2;
   letter-spacing: 0.03em;
   color: var(--black-text);
 }
 
-/* На время убрал text-align!  */
-
 .prof-item {
   font-weight: normal;
+  text-align: center;
   font-size: 16px;
   line-height: 1.2;
   letter-spacing: 0.03em;
@@ -173,6 +299,13 @@ header {
 /* Футер */
 .footer {
   background-color: var(--dark-grey);
+}
+
+.container .webstudio-foot {
+  display: block;
+  padding-top: 60px;
+  margin-bottom: 20px;
+  text-decoration: none;
 }
 
 .footer-studio {
@@ -185,6 +318,9 @@ header {
 }
 
 .addr {
+  display: block;
+  margin-bottom: 10px;
+
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -193,13 +329,27 @@ header {
   color: var(--white-text);
 }
 
+.footer-link {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 0;
+  padding-bottom: 60px;
+  padding-left: 0;
+}
+
 .footer-link .link {
+  margin-bottom: 0;
+
   font-style: normal;
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
   text-decoration: none;
   color: var(--footer);
+}
+
+.footer-link .item:first-child {
+  margin-bottom: 10px;
 }
 
 .footer-link .link:hover,
