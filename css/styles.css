@@ -1,0 +1,267 @@
+:root {
+  --white-text: rgba(255, 255, 255, 1);
+  --black-text: rgba(33, 33, 33, 1);
+  --grey-text: rgba(117, 117, 117, 1);
+  --footer: rgba(255, 255, 255, 0.6);
+
+  --white: #ffffff;
+  --dark-grey: #2f303a;
+  --light-grey: #f5f4fa;
+  --blue: #2196f3;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+* {
+  list-style-type: none;
+}
+
+header {
+  background-color: var(--white);
+}
+
+.webstudio {
+  text-decoration: none;
+}
+
+/* Логотип */
+.logo-web,
+.logo-studio {
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+}
+
+.logo-web {
+  color: var(--blue);
+}
+
+.logo-studio {
+  color: #000000;
+}
+
+/* Ссылки навигации */
+
+.link-nav .link {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--black-text);
+}
+
+.link-nav .link:hover,
+.link-nav .link:focus {
+  color: var(--blue);
+}
+
+.link-nav .current {
+  color: var(--blue);
+}
+
+/* Ссылки контактов */
+
+.contacts-link .link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: var(--grey-text);
+}
+
+.contacts-link .link:hover,
+.contacts-link .link:focus {
+  color: var(--blue);
+}
+
+/* Герой */
+
+.hero {
+  background-color: var(--dark-grey);
+}
+
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.4;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--white-text);
+}
+
+.hero-button {
+  background-color: var(--blue);
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 2;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--white-text);
+}
+
+/* Преимущества */
+
+.advantages .adv-title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--black-text);
+}
+
+.advantages .text {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: var(--grey-text);
+}
+
+/* Чем мы занимаемся */
+
+.works-title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--black-text);
+}
+
+/* Наша команда */
+.our-team {
+  background-color: var(--light-grey);
+}
+
+.team-title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--black-text);
+}
+
+.team-list .list-item {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: var(--black-text);
+}
+
+/* На время убрал text-align!  */
+
+.prof-item {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: var(--grey-text);
+}
+
+/* Футер */
+.footer {
+  background-color: var(--dark-grey);
+}
+
+.footer-studio {
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: var(--white-text);
+}
+
+.addr {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: var(--white-text);
+}
+
+.footer-link .link {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  color: var(--footer);
+}
+
+.footer-link .link:hover,
+.footer-link .link:focus {
+  color: var(--blue);
+}
+
+/* Страница портфолио */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* Кнопки */
+
+.btn-variants .variants {
+  background-color: var(--light-grey);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--black-text);
+}
+
+.btn-variants .variants:hover,
+.btn-variants .variants:focus {
+  background-color: var(--blue);
+}
+
+/* Виды работ */
+
+.example {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  text-decoration: none;
+  color: var(--black-text);
+}
+
+.works-example .link {
+  text-decoration: none;
+}
+
+.works-example .example:focus {
+  color: var(--blue);
+}
+
+.works-example .kinds {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 2;
+  letter-spacing: 0.03em;
+  color: var(--grey-text);
+}
