@@ -467,23 +467,16 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   margin: 0;
-  padding: 0;
+  padding-bottom: 95px;
   margin-left: -20px;
   margin-top: -20px;
-}
-
-.works-example .link {
-  text-decoration: none;
 }
 
 .works-example .item {
   flex-basis: calc(100% / 3 - 20px);
   margin-left: 20px;
   margin-top: 20px;
-}
-
-.works-example .item:nth-last-child(-n + 3) {
-  padding-bottom: 95px;
+  border: 1px rgba(238, 238, 238, 1);
 }
 
 .works-example .example:focus {
@@ -492,6 +485,7 @@ h2 {
 
 .card {
   box-shadow: var(--card-shadow);
+  text-decoration: none;
 }
 
 .works-example .kinds {
